@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <title>Scorescape - Home</title><!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script><!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+ <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+<!-- =======================================================
+  * Template Name: Mentor
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+  <img src="{{url_for('static',filename=file)}}"> 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="{{url_for('home')}}">ScoreScape</a></h1><!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="{{ url_for('home') }}" class="logo me-auto"><img src="assets/img/school.jpeg" alt="" class="img-fluid"></a>-->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li>
+            <a class="active" href="{{url_for('home')}}">Home</a>
+          </li>
+          <li>
+            <a href="{{url_for('about')}}">Fiscal Trends</a>
+          </li>
+          <li>
+            <a href="{{url_for('courses')}}">Score Analytics</a>
+          </li>
+          <li>
+            <a href="{{url_for('trainers')}}">District Financial Analytics</a>
+          </li>
+          <li>
+            <a href="{{url_for('contact')}}">Contact</a>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Educational Budgets, Enrollment and Student Scores</h1>
+      <h2>Analyzing Data to Empower Education</h2><a href="{{url_for('about')}}" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100"></div><!-- div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content"-->
+          <div class="container">
+            <h3 style="text-align: center;">Education Budget and Outcomes</h3>
+            <p>Education is the bedrock of personal and societal growth.We delve into the intricate world of education budgets, enrollments and how they correlate with student outcomes.Using U.S. Census Bureau data and National Assessment of Educational Progress (NAEP) data from 1994-2015 we analyze trends, patterns, and outcomes to encourage access to and transparency around educational data.</p>
+            <h3>Purpose</h3>
+            <p>We provide a tool that serves not just as a repository of information but also as a tool for educators and policymakers alike. Whether you're a teacher seeking to understand the impact of your school's budget or a policymaker formulating the next big education initiative, your journey begins here.</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+        <div class="row counters">
+          <h3 style="text-align: center;">Education Statistics for 2015</h3><!-- Total Students -->
+          <div class="col-lg-2 col-6 text-center">
+            <span style="color: #2e8b57;">48.5M</span>
+            <p>Total Students (2015)</p>
+          </div><!-- Average Instruction Expenditure per Student -->
+          <div class="col-lg-2 col-6 text-center">
+            <span style="color: #2e8b57;">$7</span>
+            <p>Average Instruction Expenditure per Student (2015)</p>
+          </div><!-- Avg. Grade 4 Math Score -->
+          <div class="col-lg-2 col-6 text-center">
+            <p>Avg. Grade 4 Math Score (2015)</p>
+          </div><!-- Avg. Grade 4 Reading Score -->
+          <div class="col-lg-2 col-6 text-center">
+            <p>Avg. Grade 4 Reading Score (2015)</p>
+          </div><!-- Avg. Grade 4 Math Score -->
+          <div class="col-lg-2 col-6 text-center">
+            <p>Avg. Grade 8 Math Score (2015)</p>
+          </div><!-- Avg. Grade 4 Reading Score -->
+          <div class="col-lg-2 col-6 text-center">
+            <p>Avg. Grade 8 Reading Score (2015)</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Counts Section -->
+    <!-- ======= Data section ======= -->
+    <section id="data" class="data section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <!-- Data Description Column -->
+          <div class="col-md-12">
+            <div class="content">
+              <h4>Data Sources</h4>
+              <p>We use the U.S. Census Bureau data and the National Assessment of Educational Progress (NAEP) data from two separate datasets. The NAEP data provides a representative measure of student achievement and is administered to U.S. elementary and secondary students.</p>
+              <ul>
+                <li>Primary Dataset: <a href="https://www.kaggle.com/datasets/noriuk/us-education-datasets-unification-project" target="_blank">US Education Datasets Unification Project</a>
+                </li>
+                <li>Secondary Dataset: <a href="https://www.kaggle.com/datasets/noriuk/us-educational-finances?select=districts.csv" target="_blank">US Educational Finances</a>
+                </li>
+                <li>Latitude and Longitude Data: <a href="https://www.kaggle.com/datasets/paultimothymooney/latitude-and-longitude-for-every-country-and-state/data?select=world_country_and_usa_states_latitude_and_longitude_values.csv" target="_blank">L&gt;
+                  <ul>
+                    <li>USA States to Region Mapping:</li>USA States to Region
+                  </ul></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+    <!-- Tableau Visualization Column -->
+    <h3>Total Instruction Expenditure Distribution</h3>
+    <p>The visual below displays a sunburst chart detailing instructional spending across four U.S. regions, the West, Midwest, Northeast, and South, and states on the outer ring. Hovering over a slice will display instructional spending figures for specific regions or states.</p>
+    <div class="col-md-12 text-center">
+      <div class='tableauPlaceholder' id='viz1700942790303' style='position: relative'>
+        <div class='tableauPlaceholder' id='viz1701076407930' style='position: relative; text-align: center;'>
+          <noscript><a href='#'><img src='https://public.tableau.com/static/images/Su/SunburstInstructionalSpending_170094098816%3E%20%3C/div%3E%20%3C/div%3E%20%3C/div%3E%3Cstyle%3E%20#viz1701076407930%20{%20position:%20absolute;%20top:%2050%;%20left:%2050%;%20transform:%20translate(-50%,%20-50%);%20}%20%3C/style%3E%20%3C!--%20Add%20this%20style%20within%20your%20HTML%20head%20tag%20or%20a%20CSS%20file%20--%3E%3Cstyle%3E%20.charts-grade-container%20{%20display:%20flex;%20justify-content:%20space-around;%20flex-wrap:%20wrap;%20/*%20This%20will%20allow%20the%20charts%20to%20wrap%20on%20smaller%20screens%20*/%20}%20.chart%20{%20flex:%201;%20/*%20This%20will%20ensure%20that%20both%20divs%20take%20up%20equal%20space%20*/%20min-width:%20300px;%20/*%20This%20ensures%20that%20the%20chart%20does%20not%20get%20too%20small%20*/%20margin:%2010px;%20/*%20This%20adds%20some%20space%20between%20your%20charts%20*/%20}%20/*%20Responsive%20Design%20*/%20@media%20(max-width:%20768px)%20{%20.charts-grade-container%20{%20flex-direction:%20column;%20}%20}%3C/style%3E%20%3C!--%20=======%20Trainers%20Section%20=======%20--%3E%20%3Csection%20id="trainers"%20class="trainers"%3E%20%3Cdiv%20class="container"%20data-aos="fade-up"%3E%20%3Cdiv%20class="row"%20data-aos="zoom-in"%20data-aos-delay="100"%3E%20%3Cdiv%20class="col-lg-4%20col-md-6%20d-flex%20align-items-stretch"%3E%20%3Cdiv%20class="member"%3E%20%20%3Cimg%20src="{{%20url_for(' filename='assets/img/trainers/ham.jpg' class="img-fluid" alt="Hamsini Sankaran">
+          <div class="member-content">
+            <h4>Hamsini Sankaran</h4><span>Data Scientist</span>
+          </div></a></noscript>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img src="{{url_for('static',filename='assets/img/trainers/liliana.jpg')}}" class="img-fluid" alt="Liliana Deonizio">
+          <div class="member-content">
+            <h4>Liliana Deonizio</h4><span>Data Scientist</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img src="{{url_for('static',filename='assets/img/trainers/kodzai.jpg')}}" class="img-fluid" alt="Kodzai Nyakurimwa">
+          <div class="member-content">
+            <h4>Kodzai Nyakurimwa</h4><span>Data Scientist</span>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Trainers Section -->
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          <strong><span>Thank you for viewing our visuals!</span></strong> .
+        </div>
+        <div class="credits">
+          Designed by <a href="https://www.linkedin.com/in/hamsini-sankaran/">Scorescape</a> <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <div id="preloader"></div><a href="#" class="back-to-top d-flex align-items-center justify-content-center"></a> <!-- Vendor JS Files -->
+   
+  <script src="{{url_for('static',filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script> 
+  <script src="{{url_for('static',filename='assets/vendor/aos/aos.js')}}"></script> 
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script> 
+  <script src="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script> 
+  <script src="{{url_for('static',filename='assets/vendor/php-email-form/validate.js')}}"></script> <!-- Template Main JS File -->
+   
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+</body>
+</html>

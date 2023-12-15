@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Scorescape - State Level Trends</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords"><!-- Favicons -->
+  <link href="/~hamsini.sankaran/w209/static/assets/img/favicon.png" rel="icon">
+  <link href="/~hamsini.sankaran/w209/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/~hamsini.sankaran/w209/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="/~hamsini.sankaran/w209/static/assets/css/style.css" rel="stylesheet"><!-- =======================================================
+  * Template Name: Mentor
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="{{ url_for('home') }}">Scorescape</a></h1><!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li>
+            <a href="/~hamsini.sankaran/w209/index">Home</a>
+          </li>
+          <li>
+            <a class="active"  href="/~hamsini.sankaran/w209/about">Fiscal Trends</a>
+          </li>
+          <li>
+            <a href="/~hamsini.sankaran/w209/courses">Score Analytics</a>
+          </li>
+          <li>
+            <a href="/~hamsini.sankaran/w209/trainers">District Financial Analytics</a>
+          </li>
+          <li>
+            <a href="/~hamsini.sankaran/w209/contact">Contact</a>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Tracing the Evolution of U.S. Educational Spending</h2>
+      </div>
+    </div><!-- End Breadcrumbs -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+      <h2>Educational Spending Trends by State and Year</h2>
+    <p>The below visual presents a dual visualization of educational spending. On the left, a horizontal bar chart ranks states by average instructional expenditure per student, showing variability across states. On the right, a line graph depicts the national trend over time, indicating a general increase in expenditure per student from 1995 to 2015.</p>
+        <div class='tableauPlaceholder' id='viz1700952039297' style='position: relative; width: 100%;'>
+          <noscript><a href='#'><img alt='Dashboard 1' src='https:/...'></a></noscript>
+          <div class='tableauPlaceholder' id='viz1700952039297' style='position: relative'>
+            <noscript><a href='#'><img alt='Dashboard 1 ' src='https:/%3E%20%3C/div%3E%3C/div%3E%20%20%3Cdiv%20class=' id='viz1700952039297' style='position: relative'><img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/In/InstructionalExpenditurebyState_17009497730680/Dashboard1/1_rss.png' style='border: none'></a></noscript> <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
+               <param name='embed_code_version' value='3'>
+               <param name='site_root' value=''>
+               <param name='name' value='InstructionalExpenditurebyState_17009497730680/Dashboard1'>
+               <param name='tabs' value='no'>
+               <param name='toolbar' value='yes'>
+               <param name='static_image' value='https://public.tableau.com/static/images/In/InstructionalExpenditurebyState_17009497730680/Dashboard1/1.png'>
+               <param name='animate_transition' value='yes'>
+               <param name='display_static_image' value='yes'>
+               <param name='display_spinner' value='yes'>
+               <param name='display_overlay' value='yes'>
+               <param name='display_count' value='yes'>
+               <param name='language' value='en-US'>
+               <param name='filter' value='publish=yes'>
+            </object>
+          </div>
+          <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1700952039297');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1500px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1500px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+          <br><br> 
+          <div class="container" data-aos="fade-up">
+          <h3>Instructional Spending Over Time</h3>
+            <p>The visual is a slope graph that represents the instructional expenditure per student across different states and shows how these expenditures have changed over a specific time period. Notably, the graph highlights the states with the steepest slopes, such as the District of Columbia, indicating a significant increase in expenditure per student compared to others. States like New York also show a steep incline, suggesting a considerable rise in spending. The color coding distinguishes between regions, aiding in regional comparison of spending growth.</p>
+
+          <div class='tableauPlaceholder' id='viz1700709560967' style='position: relative'>
+            <noscript><a href='#'><img alt='Slope Graph of Instructional Expenditure Per Student ' src='https://public.tableau.com/static/images/In/InstructionalExpenditurebyState/SlopeGraphofInstructionalExpenditurePerStudent/1_rss.png' style='border: none'></a></noscript> <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
+               <param name='embed_code_version' value='3'>
+               <param name='site_root' value=''>
+               <param name='name' value='InstructionalExpenditurebyState/SlopeGraphofInstructionalExpenditurePerStudent'>
+               <param name='tabs' value='no'>
+               <param name='toolbar' value='yes'>
+               <param name='static_image' value='https://public.tableau.com/static/images/In/InstructionalExpenditurebyState/SlopeGraphofInstructionalExpenditurePerStudent/1.png'>
+               <param name='animate_transition' value='yes'>
+               <param name='display_static_image' value='yes'>
+               <param name='display_spinner' value='yes'>
+               <param name='display_overlay' value='yes'>
+               <param name='display_count' value='yes'>
+               <param name='language' value='en-US'>
+               <param name='filter' value='publish=yes'>
+            </object>
+          </div> 
+         </div>
+
+          <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1700709560967');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script> <!-- Container for the enroll and expenditure trend graphs -->
+          <br><br>
+          <h3>Trends in Instruction Expenditure per Student and Enrollment Over Time</h3>
+          <p>The visualization juxtaposes two area charts tracking educational metrics for various states from 1993 to 2016, with a focus on Alabama. Users can compare trends in instructional spending per student and student enrollment over time, identifying patterns such as the overall increase in spending and the nuanced enrollment trends—like Michigan's decline post-2008, Maine's decrease beginning in 1998, and Kansas's enrollment growth from 2010 alongside fluctuating then declining spending from 2009 to 2016. This comparative visual format enables users to discern state-specific educational investment and demographic shifts.</p>
+          
+          <div id="vis1"></div>
+          <script type="text/javascript">
+           // Loading the first Vega-Lite visualization
+             fetch('/~hamsini.sankaran/w209/static/enrol_exp_area.json')
+             .then(response => response.json())
+             .then(vlSpec => {
+             vegaEmbed("#vis1", vlSpec)
+            .then(result => console.log(result))
+            .catch(console.warn);
+           });
+          </script>
+          <br><br>
+          <div class="container" data-aos="fade-up">
+          <h3>Dynamic Educational Expenditure Rankings by State</h3>
+          <p>This animated chart captures the changing ranks of the top 20 U.S. states in terms of instructional expenditure over time. It highlights the fluctuations in education spending across different states with a dropdown menu to select specific years for closer inspection. California and New York consistently appear at the top, reflecting their large educational budgets.</p>
+           <div class='tableauPlaceholder' id='viz1701074023814' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;te&#47;temp1_17010731524290&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='temp1_17010731524290&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;te&#47;temp1_17010731524290&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701074023814');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>  
+               <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
+               <param name='embed_code_version' value='3'>
+               <param name='site_root' value=''>
+               <param name='name' value='inst_exp_animation/Sheet1'>
+               <param name='tabs' value='no'>
+               <param name='toolbar' value='yes'>
+               <param name='static_image' value='https://public.tableau.com/static/images/in/inst_exp_animation/Sheet1/1.png'>
+               <param name='animate_transition' value='yes'>
+               <param name='display_static_image' value='yes'>
+               <param name='display_spinner' value='yes'>
+               <param name='display_overlay' value='yes'>
+               <param name='display_count' value='yes'>
+               <param name='language' value='en-US'>
+               <param name='filter' value='publish=yes'>
+            </object>
+          </div>
+          <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1700856484580');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container"></div>
+    </section><!-- End Counts Section -->
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+        <strong><span>Thank you for viewing our visuals!
+</span></strong>.
+        </div>
+	<div class="credits">
+          Designed by <a href="https://www.linkedin.com/in/hamsini-sankaran/">Scorescape</a>
+          <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <div id="preloader"></div><a href="#" class="back-to-top d-flex align-items-center justify-content-center"></a> <!-- Vendor JS Files -->
+   
+  <script src="/~hamsini.sankaran/w209/static/assets/vendor/purecounter/purecounter_vanilla.js"></script> 
+  <script src="/~hamsini.sankaran/w209/static/assets/vendor/aos/aos.js"></script> 
+  <script src="/~hamsini.sankaran/w209/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <script src="/~hamsini.sankaran/w209/static/assets/vendor/swiper/swiper-bundle.min.js"></script> 
+  <script src="/~hamsini.sankaran/w209/static/assets/vendor/php-email-form/validate.js"></script> <!-- Template Main JS File -->
+   
+  <script src="/~hamsini.sankaran/w209/static/assets/js/main.js"></script>
+</body>
+</html>

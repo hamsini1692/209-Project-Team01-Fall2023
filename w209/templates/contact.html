@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Scorescape - Contact Us</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="{{ url_for('home') }}">Scorescape</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+           <li><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{url_for('about')}}">Fiscal Trends</a></li>
+          <li><a href="{{url_for('courses')}}">Score Analytics</a></li>
+           <li><a href="{{url_for('trainers')}}">School District Analytics</a></li>
+       
+          <li><a class="active" href="{{url_for('contact')}}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Contact Us</h2>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <br><br> 
+        <img src="{{ url_for('static', filename='assets/img/thank.png') }}" height="600">
+        <br><br>        
+        <p style="font-size: 16px; font-weight: bold;">Thank you for visiting our page! If you have any questions, please feel free to reach out to anyone on our team:</p>
+        <div class="row">
+                   
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Hamsini Sankaran</h3>
+              <p><a href="mailto:hamsini.sankaran@berkeley.edu" style="color: #863135; font-size: larger; font-weight: bold;"">hamsini.sankaran@berkeley.edu</a></p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Liliana Deonizio</h3>
+              <p><a href="mailto:lilycsm@berkeley.edu" style="color: #863135; font-size: larger; font-weight: bold;"">lilycsm@berkeley.edu</a></p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Kodzai Nyakurimwa</h3>
+              <p><a href="mailto:knyakurimwa@ischool.berkeley.edu" style="color: #863135; font-size: larger; font-weight: bold;"">knyakurimwa@ischool.berkeley.edu</a></p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <!-- ======= Footer ======= --> 
+ <div style="height: 400px;"></div>
+  <footer id="footer">
+  <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+        <strong><span>Thank you for viewing our visuals!
+</span></strong>.
+        </div>
+	<div class="credits">
+          Designed by <a href="https://www.linkedin.com/in/hamsini-sankaran/" style="color: #f78045;"><strong>Scorescape</strong></a>
+          <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+      </div>
+    </div>    
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+   <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+
+</html>

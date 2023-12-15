@@ -1,0 +1,686 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "hconcat": [
+    {
+      "data": {"name": "data-53bdd258b62317ecafbe35d8b6468b62"},
+      "mark": "bar",
+      "encoding": {
+        "color": {"field": "reading_category_grade8", "type": "nominal"},
+        "order": {
+          "field": "reading_category_grade8",
+          "sort": "ascending",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "region", "title": "Region", "type": "nominal"},
+          {
+            "field": "reading_category_grade8",
+            "title": "Reading levels",
+            "type": "nominal"
+          },
+          {
+            "field": "grades_8_g",
+            "title": "Students Counted by Skill",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "region", "title": "Regions", "type": "nominal"},
+        "y": {
+          "field": "grades_8_g",
+          "stack": "zero",
+          "title": "Number of 8th grade students",
+          "type": "quantitative"
+        }
+      },
+      "height": 400,
+      "selection": {
+        "Selected Grade 8": {
+          "type": "single",
+          "fields": ["year"],
+          "bind": {
+            "input": "select",
+            "options": [2003, 2005, 2007, 2009, 2011, 2013, 2015]
+          },
+          "init": {"year": 2015}
+        }
+      },
+      "title": {
+        "text": "Regional 8th Graders' Reading Prowess",
+        "dy": -10,
+        "fontSize": 20,
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"selection": "Selected Grade 8"}}],
+      "width": 400
+    },
+    {
+      "data": {"name": "data-a5d0b9505a3535e29ce3b7b2a1589d3f"},
+      "mark": "bar",
+      "encoding": {
+        "color": {"field": "math_category_grade8", "type": "nominal"},
+        "order": {
+          "field": "math_category_grade8",
+          "sort": "ascending",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "region", "title": "Region", "type": "nominal"},
+          {
+            "field": "math_category_grade8",
+            "title": "Math levels",
+            "type": "nominal"
+          },
+          {
+            "field": "grades_8_g",
+            "title": "Students Counted by Skill",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "region", "title": "Regions", "type": "nominal"},
+        "y": {
+          "field": "grades_8_g",
+          "stack": "zero",
+          "title": "Number of 8th grade students",
+          "type": "quantitative"
+        }
+      },
+      "height": 400,
+      "selection": {
+        "Selected Grade 8": {
+          "type": "single",
+          "fields": ["year"],
+          "bind": {
+            "input": "select",
+            "options": [2003, 2005, 2007, 2009, 2011, 2013, 2015]
+          },
+          "init": {"year": 2015}
+        }
+      },
+      "title": {
+        "text": "Regional 8th Graders' Math Prowess",
+        "dy": -10,
+        "fontSize": 20,
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"selection": "Selected Grade 8"}}],
+      "width": 400
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-53bdd258b62317ecafbe35d8b6468b62": [
+      {
+        "year": 2003,
+        "reading_category_grade8": "Below Average",
+        "region": "Northeast",
+        "grades_8_g": 13018
+      },
+      {
+        "year": 2003,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 1223673
+      },
+      {
+        "year": 2003,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 659451
+      },
+      {
+        "year": 2003,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 854153
+      },
+      {
+        "year": 2003,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 641201
+      },
+      {
+        "year": 2003,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 155994
+      },
+      {
+        "year": 2003,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 261941
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Average",
+        "region": "West",
+        "grades_8_g": 44046
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Below Average",
+        "region": "Midwest",
+        "grades_8_g": 216134
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Below Average",
+        "region": "Northeast",
+        "grades_8_g": 12470
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 1241675
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 692684
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 626101
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 630962
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 156909
+      },
+      {
+        "year": 2005,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 180912
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Average",
+        "region": "Midwest",
+        "grades_8_g": 229946
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Below Average",
+        "region": "Midwest",
+        "grades_8_g": 126608
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Below Average",
+        "region": "Northeast",
+        "grades_8_g": 12098
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 1196645
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 694921
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 456492
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 605004
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 169160
+      },
+      {
+        "year": 2007,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 218081
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Below Average",
+        "region": "Midwest",
+        "grades_8_g": 121463
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Below Average",
+        "region": "Northeast",
+        "grades_8_g": 11275
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 956606
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 635029
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 667842
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 588205
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 411727
+      },
+      {
+        "year": 2009,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 259129
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 113238
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 1070455
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 629411
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 786140
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 598565
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 214890
+      },
+      {
+        "year": 2011,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 266412
+      },
+      {
+        "year": 2013,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 318601
+      },
+      {
+        "year": 2013,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 638738
+      },
+      {
+        "year": 2013,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 794502
+      },
+      {
+        "year": 2013,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 599370
+      },
+      {
+        "year": 2013,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1128949
+      },
+      {
+        "year": 2013,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 273197
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Average",
+        "region": "Northeast",
+        "grades_8_g": 197997
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 265733
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Average",
+        "region": "West",
+        "grades_8_g": 84084
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Below Average",
+        "region": "South",
+        "grades_8_g": 898120
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Below Average",
+        "region": "West",
+        "grades_8_g": 548610
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 777607
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 387110
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 282671
+      },
+      {
+        "year": 2015,
+        "reading_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 276630
+      }
+    ],
+    "data-a5d0b9505a3535e29ce3b7b2a1589d3f": [
+      {
+        "year": 2003,
+        "math_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 68967
+      },
+      {
+        "year": 2003,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 854153
+      },
+      {
+        "year": 2003,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 654219
+      },
+      {
+        "year": 2003,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1310700
+      },
+      {
+        "year": 2003,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 921392
+      },
+      {
+        "year": 2005,
+        "math_category_grade8": "Average",
+        "region": "Midwest",
+        "grades_8_g": 160911
+      },
+      {
+        "year": 2005,
+        "math_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 68400
+      },
+      {
+        "year": 2005,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 681324
+      },
+      {
+        "year": 2005,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 643432
+      },
+      {
+        "year": 2005,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1330184
+      },
+      {
+        "year": 2005,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 917642
+      },
+      {
+        "year": 2007,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 813046
+      },
+      {
+        "year": 2007,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 617102
+      },
+      {
+        "year": 2007,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1365805
+      },
+      {
+        "year": 2007,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 913002
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Average",
+        "region": "Midwest",
+        "grades_8_g": 121463
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Average",
+        "region": "Northeast",
+        "grades_8_g": 11275
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 124084
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 667842
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 588205
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1244249
+      },
+      {
+        "year": 2009,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 894158
+      },
+      {
+        "year": 2011,
+        "math_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 327163
+      },
+      {
+        "year": 2011,
+        "math_category_grade8": "Average",
+        "region": "West",
+        "grades_8_g": 46528
+      },
+      {
+        "year": 2011,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 786140
+      },
+      {
+        "year": 2011,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 598565
+      },
+      {
+        "year": 2011,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1071420
+      },
+      {
+        "year": 2011,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 849295
+      },
+      {
+        "year": 2013,
+        "math_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 111569
+      },
+      {
+        "year": 2013,
+        "math_category_grade8": "Average",
+        "region": "West",
+        "grades_8_g": 34541
+      },
+      {
+        "year": 2013,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 794502
+      },
+      {
+        "year": 2013,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 599370
+      },
+      {
+        "year": 2013,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1335981
+      },
+      {
+        "year": 2013,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 877394
+      },
+      {
+        "year": 2015,
+        "math_category_grade8": "Average",
+        "region": "Midwest",
+        "grades_8_g": 113640
+      },
+      {
+        "year": 2015,
+        "math_category_grade8": "Average",
+        "region": "South",
+        "grades_8_g": 123673
+      },
+      {
+        "year": 2015,
+        "math_category_grade8": "Excellent",
+        "region": "Midwest",
+        "grades_8_g": 663967
+      },
+      {
+        "year": 2015,
+        "math_category_grade8": "Excellent",
+        "region": "Northeast",
+        "grades_8_g": 585107
+      },
+      {
+        "year": 2015,
+        "math_category_grade8": "Excellent",
+        "region": "South",
+        "grades_8_g": 1322851
+      },
+      {
+        "year": 2015,
+        "math_category_grade8": "Excellent",
+        "region": "West",
+        "grades_8_g": 909324
+      }
+    ]
+  }
+}
