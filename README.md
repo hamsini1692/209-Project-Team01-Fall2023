@@ -25,12 +25,16 @@ Major Hypotheses
 6. Spending on instruction, support, capital outlay, and other needs is similar across the top twenty school districts.
 
 Project Structure
+
 Visualizations
 The visuals on the website are developed using Altair and Tableau.
+
 Code Organization
 All code related to the website is contained within the w209 folder.
+
 HTML Templates
 The HTML templates are located in the templates folder.
+
 Static Files
 Images used on the website can be found in the static folder.
 JSON files from Vega-Lite are also stored in the static folder.
