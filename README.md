@@ -1,9 +1,14 @@
 Educational Budgets, Enrollment and Student Scores
 
-Education is the bedrock of personal and societal growth.We delve into the intricate world of education budgets, enrollments and how they correlate with student outcomes.Using U.S. Census Bureau data and National Assessment of Educational Progress (NAEP) data from 1994-2015 we analyze trends, patterns, and outcomes to encourage access to and transparency around educational data.
+Education is the bedrock of personal and societal growth.We delve into the intricate world of education budgets, enrollments and how they correlate with student outcomes.
+
+Using U.S. Census Bureau data and National Assessment of Educational Progress (NAEP) data from 1994-2015 we analyze trends, patterns, and outcomes to encourage access to and transparency around educational data.
 
 Data Sources
-We use the U.S. Census Bureau data and the National Assessment of Educational Progress (NAEP) data from two separate datasets. The NAEP data provides a representative measure of student achievement and is administered to U.S. elementary and secondary students.
+
+We use the U.S. Census Bureau data and the National Assessment of Educational Progress (NAEP) data from two separate datasets. 
+The NAEP data provides a representative measure of student achievement and is administered to U.S. elementary and secondary students.
+
 
 Primary Dataset: https://www.kaggle.com/datasets/noriuk/us-education-datasets-unification-project
 Secondary dataset: https://www.kaggle.com/datasets/noriuk/us-educational-finances?select=districts.csv
